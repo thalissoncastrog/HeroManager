@@ -27,7 +27,7 @@ namespace HeroManagerAPI.Models
         [Required]
         public float Weight { get; set; }
 
-        public ICollection<HeroSuperPowers> HeroSuperPowers { get; set; }
+        public ICollection<HeroSuperPower> HeroSuperPowers { get; set; }
 
     }
 }
