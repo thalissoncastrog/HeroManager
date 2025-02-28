@@ -8,11 +8,11 @@ namespace HeroManagerAPI.Models
     {
         [Key]
         public int HeroId { get; set; }
-        public Hero Hero { get; set; }
+        public Hero? Hero { get; set; }
 
         [Key]
         public int SuperPowerId { get; set; }
-        public SuperPower SuperPower { get; set; }
+        public SuperPower? SuperPower { get; set; }
 
     }
 }
