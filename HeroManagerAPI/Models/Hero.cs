@@ -11,18 +11,21 @@ namespace HeroManagerAPI.Models
         public int Id { get; set; }
 
         [Required]
-        [MaxLength(100)]
+        [MaxLength(120)]
         public string Name { get; set; }
 
         [Required]
-        [MaxLength(50)]
+        [MaxLength(120)]
         public string HeroName { get; set; }
 
         [Required]
-        public DateTime BirthDate { get; set; }
+        public DateTime? BirthDate { get; set; }
 
         [Required]
         public float Height { get; set; }
+
+        [Required]
+        public float Weight { get; set; }
 
         public ICollection<HeroSuperPowers> HeroSuperPowers { get; set; }
 
