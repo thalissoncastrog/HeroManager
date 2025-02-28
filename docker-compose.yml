@@ -2,7 +2,7 @@ services:
   heroes-api:
     image: heroes-api:latest
     build:
-      context: .
+      context: ./HeroManagerAPI
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
