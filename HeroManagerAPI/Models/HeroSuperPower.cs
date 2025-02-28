@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace HeroManagerAPI.Models
 {
     [Table("HeroesSuperPowers")]
-    public class HeroSuperPowers
+    public class HeroSuperPower
     {
         [Key]
         public int HeroId { get; set; }
