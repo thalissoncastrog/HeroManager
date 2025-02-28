@@ -55,6 +55,15 @@ $ docker-compose up -d --build
 > **Note**
 > After run each command above, go to a web browser and access this url: http://localhost:8080/swagger.
 
+## Future Improvements
+
+- Apply DTO to improve the json body and the response from api
+- Apply a relational database.
+- Import frontend to a docker container.
+- Implement a API Gateway.
+- Docker secrets or secrets manager in cloud, to manage credentials needed in each service.
+- Integrate centralized logging and monitoring like prometheus.
+
 ## License
 
 MIT
