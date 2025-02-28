@@ -1,0 +1,18 @@
+services:
+  heroes-api:
+    image: heroes-api:latest
+    build:
+      context: ./HeroManagerAPI
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    restart: always
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      app-network:
+
+networks:
+  app-network:
+    driver: bridge
