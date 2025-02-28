@@ -55,9 +55,26 @@ $ docker-compose up -d --build
 > **Note**
 > After run each command above, go to a web browser and access this url: http://localhost:8080/swagger.
 
+```json
+// POST REQUEST BODY TEMPLATE
+
+{
+  "name": "thalisson",
+  "heroName": "invencible",
+  "birthDate": "2025-02-28T13:30:08.545Z",
+  "height": 1.73,
+  "weight": 71,
+  "heroSuperPowers": [
+    {
+      "superPowerId": 2
+    }
+  ]
+}
+```
+
 ## Future Improvements
 
-- Apply DTO to improve the json body and the response from api
+- Apply DTO to improve the json body and the response from API
 - Apply a relational database.
 - Import frontend to a docker container.
 - Implement a API Gateway.
